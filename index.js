@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./lib/solarCalc.js');
+module.exports = require('./src/solarCalc.js');
