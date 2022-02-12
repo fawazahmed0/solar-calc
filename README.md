@@ -10,6 +10,11 @@ var SolarCalc = require('solar-calc');
 var solar = new SolarCalc(new Date('Mar 8 2015'),35.78,-78.649999);
 
 solar.sunrise // 2015-03-08T11:35:30.000Z
+
+// Get time for sun at specific angle
+let angle = 8
+let sunRising = true
+solar.sun.timeAtAngle(angle, sunRising) // 2015-03-08T06:35:30.000Z
 ```
 ## Properties
 All properties are `Date` objects unless otherwise noted
@@ -32,6 +37,8 @@ All properties are `Date` objects unless otherwise noted
 
 - `solarNoon` When the sun transits the celestial meridian – roughly the time when it is highest above the horizon
 
+- `sunAltitude` Altitude of sun
+
 - `lunarDistance` (integer) the distance from the center of the eart to the center of the moon in kilometers
 
-- `luminosty` (number) the percentage of the moon that is illuminated in decimal form
+- `lunarIlluminosity` (number) the percentage of the moon that is illuminated in decimal form
