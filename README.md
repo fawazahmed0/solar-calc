@@ -11,7 +11,7 @@ var solar = new SolarCalc(new Date('Mar 8 2015'),35.78,-78.649999);
 
 solar.sunrise // 2015-03-08T11:35:30.000Z
 
-// Get time for sun at specific angle
+// Get time when sun is at specific angle
 let angle = 8
 let sunRising = true
 solar.sun.timeAtAngle(angle, sunRising) // 2015-03-08T06:35:30.000Z
