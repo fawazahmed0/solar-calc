@@ -1,6 +1,4 @@
-'use strict';
-
-class Sun {
+export default class Sun {
   constructor(date, latitude, longitude) {
     this.date = date;
     this.latitude = latitude;
@@ -296,4 +294,4 @@ function calcSunAltitude(jd, latitude) {
   return elevationAngle;
 }
 
-module.exports = Sun;
+
