@@ -1,7 +1,7 @@
-'use strict';
 
-var Sun = require('./sun.js');
-var Moon = require('./moon.js');
+import Sun from "./sun.js";
+import Moon from "./moon.js";
+
 
 const degreesBelowHorizon = {
   sunrise: 0.833,
@@ -12,7 +12,7 @@ const degreesBelowHorizon = {
   goldenHour: -6
 };
 
-class SolarCalc {
+export default class SolarCalc {
   constructor(date, latitude, longitude) {
     this.date = date;
     this.lat = latitude;
@@ -103,4 +103,4 @@ class SolarCalc {
   }
 }
 
-module.exports = SolarCalc;
+
