@@ -1,6 +1,6 @@
-'use strict';
 
-class Moon {
+
+export default class Moon {
   constructor(date, latitude, longitude) {
     this.date = date;
     this.latitude = latitude;
@@ -566,4 +566,4 @@ function moonPhase(date) {
 //   return quarters;
 // }
 
-module.exports = Moon;
+
